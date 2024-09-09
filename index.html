@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator APP</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1>Password Generator</h1> 
+            <div class="display-container">
+                <input readonly placeholder="Password" class="display" data-display>
+                <button copyBtn>
+                    <span copyMsg></span>
+                    <img src="./copy-content-vector-icon-document-260nw-1260468262.webp" alt="">
+                </button>
+            </div>
+            <div class="input-container">
+                <div class="input-range">
+                    <h3>Password Range</h3>
+                    <div data-LengthDisplay id="num">0</div>
+                </div>
+            
+                <!-- slider -->
+                 <div id="slider" class="range">
+                    <input type="range" min="1" max="20" step="1" id="rangeslider" class="slider" InputSlider>
+                </div>
+                <!-- various checkboxes -->
+                <div id="check">
+                    <div >
+                        <input type="checkbox" id="UpperCase">
+                        <label for="UpperCase"> Include UpperCase Letter</label>
+                    </div>
+                    <div>
+                       <input type="checkbox" id="LowerCase">         
+                       <label for="LowerCase">Include LowerCase letter</label>
+                    </div>
+                    <div>
+                       <input type="checkbox" id="symbol">            
+                       <label for="Symbol">Input Special Symbol</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Numbers">          
+                        <label for="Numbers">Input Numbers</label>
+                    </div>
+                </div>
+                <!-- Strength -->
+                <div id="strong">
+                <p>Strength</p>
+                    <div data-indecator id="col"> </div>
+                </div>
+                <div class="Generate-btn">
+                    <button type="submit" > GENERATE PASSWORD</button>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+   <script src="pass.js"></script>
+</body>
+</html>
